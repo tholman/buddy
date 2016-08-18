@@ -7,7 +7,7 @@ After some time, the ***surprise and delight*** of creating my own bot (if you c
 
 Its probably best if you watch me talk about him, to really experience what he became all about.
 
-[VIDEO HERE]
+https://youtu.be/RY8aCIfERHU?t=15m4s
 
 He's a nasty piece of work.
 
