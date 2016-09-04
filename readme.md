@@ -17,6 +17,12 @@ Understandably, there's some really weird code in his actual source, but due to 
 
 A few things that the "video" version has that this doesn't are: style injecting, some strange system to give default "popups", something that definitely manages timings, so certain things can happen at certain hours of the day. __But hey, perhaps the fun part is building those pieces yourself!__
 
+### Installing
+1. Clone repo, or download it
+2. Go to `chrome://extensions/` (in chrome) and click "load unpacked extension"
+3. Choose the `src` folder (it has the `manifest.json` file)
+4. You should hear him speak, straight out of the bat.
+
 ### How it works!
 #### tldr: 
 Buddy injects scripts onto your page.
