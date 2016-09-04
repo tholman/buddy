@@ -2,7 +2,7 @@
  * Binds to the pages that Buddy can take actions on.
  */
 
-var pagePath = "./src/bot/functions/pages/"
+var pagePath = "./bot/functions/pages/"
 
 var initters = {
   "www.reddit.com": {
@@ -19,7 +19,7 @@ function initPage(pageLocation) {
 
     setSimilarTabs(pageLocation);
 
-    chrome.tabs.executeScript(null, {file: pagePath + "page.js"});
+    chrome.tabs.executeScript(null, {file: pagePath + "pageActions.js"});
     chrome.tabs.executeScript(null, {file: pagePath + initters[pageLocation].script});
 
     // Inject Script

@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Buddy",
+  "description": "Because working from home is never fun.",
+  "version": "1.0",
+  "icons": {
+    // "48": "./assets/icons/48.png",
+    // "128": "./assets/icons/128.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs",
+    "tts"
+  ],
+  "tts_engine": {
+    "voices": [
+      {
+        "voice_name": "Buddy",
+        "lang": "en-US",
+        "gender": "male",
+        "event_types": ["start", "marker", "end"]
+      }
+    ]
+  },
+  "content_scripts": [
+    { 
+      "matches": ["<all_urls>"],
+      "js": [
+        "./init.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "./bot/actions/speak.js",
+      "./bot/functions/bindPage.js",
+      "./bot/init.js"
+    ],
+    "persistent": true
+  }
+}
