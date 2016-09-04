@@ -31,7 +31,7 @@ Buddy injects scripts onto your page.
 
 A few things you need to know... for the most part, pages funcitonality runs out of `pages/pageName.js` ... so reddit will run out of reddit.js.
 
-The javascript for specific pages is injected by the `bindPage` file, which then requests page information from the `client` ... which is in 'bot/init.js'
+The javascript for specific pages is injected by the `bindPage` file, which then requests page information from the `client` ... which is in `bot/init.js`
 
 A few other files exist. `actions.js` which is the client side functions like "speak", this maps to the `pageActions` speak function.
 
