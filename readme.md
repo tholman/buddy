@@ -13,6 +13,18 @@ He's a nasty piece of work.
 
 --
 
-Understandably, there's some really weird code in his actual source, but due to overwhelming want, I'm open sourcing a really (read: really really) simple shell, of Buddy's existance. So people can create and play with their own "Buddy"
+Understandably, there's some really weird code in his actual source, but due to overwhelming want, I'm open sourcing a really (read: really really) simple shell, of Buddy's existance. So people can create and play with their own "Buddy". A few things that the "video" version has that this doesn't are: style injecting, some strange system to give default "popups", something that definitely manages timings, so certain things can happen at certain hours of the day. __But hey, perhaps the fun part is building those pieces yourself!__
 
 ### How it works!
+TLDR: 
+Buddy injects scripts onto your page.
+
+MORE WEIRD DESCRIPTION, THAT DOESN'T MAKE MUCH SENSE TO MYSELF:
+
+A few things you need to know... for the most part, pages funcitonality runs out of `pages/pageName.js` ... so reddit will run out of reddit.js.
+
+The javascript for specific pages is injected by the `bindPage` file, which then requests page information from the `client` ... which is in 'bot/init.js'
+
+A few other files exist. `actions.js` which is the client side functions like "speak", this maps to the `pageActions` speak function.
+
+
